@@ -38,5 +38,5 @@ jobs:
           password: ${{secrets.PROD_PASSWORD}}
           script: |
             cd app/src
-            git pull
+            git pull origin new-feature-branch
             echo ${{secrets.PROD_PASSWORD}} | sudo -S systemctl restart api
